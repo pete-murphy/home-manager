@@ -108,27 +108,6 @@ in {
     '';
   };
 
-  #  programs.neovim = {
-  #    enable = true;
-  #    viAlias = true;
-  #    vimAlias = true;
-  #    plugins = with pkgs.vimPlugins; [
-  #      ReplaceWithRegister
-  #      ctrlp-vim
-  #      fzf-vim
-  #      fzfWrapper
-  #      vim-airline
-  #      vim-airline-themes
-  #      vim-colorschemes
-  #      vim-commentary
-  #      vim-cool
-  #      vim-markdown
-  #      vim-nix
-  #      vim-polyglot
-  #      vim-surround
-  #    ];
-  #  };
-
   programs.nixvim = {
     enable = true;
 
@@ -136,8 +115,6 @@ in {
     vimAlias = true;
 
     options = {
-      # number = true;
-      # relativenumber = true;
       shiftwidth = 4;
       scrolloff = 8;
       smartcase = true;
@@ -152,11 +129,7 @@ in {
       which-key.enable = true;
       commentary.enable = true;
       surround.enable = true;
-
-      # airline.enable = true;
       lualine.enable = true;
-
-      # autopairs.enable = true;
       fugitive.enable = true;
       telescope.enable = true;
       telescope.keymaps = {
@@ -182,15 +155,12 @@ in {
       ctrlp-vim
       fzf-vim
       fzfWrapper
-      # vim-airline
       vim-airline-themes
       vim-colorschemes
-      # vim-commentary
       vim-cool
       vim-markdown
       vim-nix
       vim-polyglot
-      # vim-surround
     ];
   };
 
