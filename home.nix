@@ -204,8 +204,7 @@ in {
   programs.git = {
     enable = true;
     userName = "Peter Murphy";
-    # userEmail = "18291327-peter.murphy1@users.noreply.gitlab.com";
-    userEmail = "peter.murphy@well.co";
+    userEmail = "26548438+pete-murphy@users.noreply.github.com";
 
     extraConfig = {
       # core.editor = "code --wait --reuse-window";
@@ -216,9 +215,10 @@ in {
 
     includes = [
       {
-        condition = "gitdir:~/Code/";
+        condition = "gitdir:~/Well/";
         contents = {
-          user.email = "26548438+pete-murphy@users.noreply.github.com";
+          # userEmail = "18291327-peter.murphy1@users.noreply.gitlab.com";
+          user.email = "peter.murphy@well.co";
         };
       }
     ];
